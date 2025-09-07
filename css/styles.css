@@ -1,3 +1,12 @@
+/* ROOT ELEMENT */
+:root {
+  --color-primary: #00afef;
+  --color-secondary: #68cef5;
+  --color-accent: #bfd73e;
+  --color-headings: #2b2e4c;
+  --color-body: #939393;
+}
+
 /* GENERAL STYLES */
 body {
   background: #e6f7fd;
