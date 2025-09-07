@@ -5,7 +5,8 @@
   --color-accent: #bfd73e;
   --color-headings: #2b2e4c;
   --color-body: #939393;
-  --color-white: #ffffff;
+  --color-white: #fff;
+  --color-black: #000;
   --letter-spacing: 1px;
   --word-spacing: 3px;
   --transition-duration: 0.5s;
@@ -605,4 +606,41 @@ a {
 
 .collapsible {
   margin-bottom: 10px;
+}
+
+/* ======================================== */
+/* BLOCKS */
+.block {
+  --padding-vertical: 2rem;
+  padding: var(--padding-vertical);
+}
+
+.block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 3rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+.block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 3rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.block--dark {
+  background: var(--color-black);
+}
+
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+  color: var(--color-white);
+}
+
+.block__header {
+  text-align: center;
+}
+
+/* CONTAINER */
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
 }
